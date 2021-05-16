@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <title>News</title>
+    <!-- Begin Style  sheets -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End Stylesheets -->
+  </head>
+  <body class="page-template-news">
+    <div class="loader"></div>
+
+    <!-- Begin Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- End Cursor -->
+    <div data-barba="wrapper">
+      <!-- Begin Header -->
+      <header class="header">
+        <nav class="container-fluid">
+          <a href="/" class="logo-link">
+            <img class="desktop" src="assets/images/dynamic/logo.png" alt="" />
+            <img
+              class="mobile"
+              src="assets/images/dynamic/logo_mobile.png"
+              alt=""
+            />
+          </a>
+          <button class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-menu">
+            <div class="nav-menu__inner">
+              <button class="hamburger-close-btn">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M1 1.38477L19.3848 19.7695" stroke="#695E4A" />
+                  <path d="M1 19.3848L19.3848 0.99999" stroke="#695E4A" />
+                </svg>
+              </button>
+              <ul class="menu-items">
+                <li class="menu-item">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Latest News</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Initiatives</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Support Us</a>
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      <a href="#">CAPITAL CAMPAIGN</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">HEARTS IN SAN FRANCISCO</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">ZSFG COVID-19 FUND</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="hearts.html">Hearts in sf</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="donate.html" class="btn btn-primary donate-link">Donate</a>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <div data-barba="container" data-barba-namespace="home">
+        <scroll>
+          <!-- Begin Content -->
+          <main>
+            <section id="featured-news">
+              <div class="container-fluid">
+                <h3>Foundation News</h3>
+                <div class="news-wrapper">
+                  <div class="news-module">
+                    <p class="news-category">
+                      <span class="text">Community</span>
+                      <span class="line"></span>
+                    </p>
+                    <div class="news-content">
+                      <div class="news-content__left">
+                        <a href="#" class="news-title">
+                          <h5>Filling a void with heart-felt art</h5>
+                          <svg
+                            width="51"
+                            height="15"
+                            viewBox="0 0 51 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 7.5L49 7.5"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M43.5 14L50 7.5L43.5 1"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                        <p class="news-excerpt">
+                          ZSFG staff team up with Paint the Void to share a
+                          message of hope and compassion.
+                        </p>
+                      </div>
+                      <div class="news-content__right">
+                        <div
+                          class="news-image"
+                          style="
+                            background-image: url('assets/images/dynamic/news1.jpg');
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="news">
+              <div class="container-fluid">
+                <div class="news-controls">
+                  <form action="" id="search-form">
+                    <div class="form-control">
+                      <input
+                        type="text"
+                        class="news-search"
+                        id="news-search"
+                        placeholder="Enter to search"
+                      />
+                      <span class="icon-search">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12.5"
+                            cy="12.5"
+                            r="11.75"
+                            stroke="#695E4A"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            d="M20.3086 20.3105L28.9982 29.0002"
+                            stroke="#695E4A"
+                            stroke-width="1.5"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </form>
+                  <div class="categories-filter">
+                    <a
+                      href="#"
+                      class="btn-category-filter"
+                      data-category="community"
+                      >Community</a
+                    >
+                    <a
+                      href="#"
+                      class="btn-category-filter"
+                      data-category="healthcare_equity"
+                      >Healthcare Equity</a
+                    >
+                    <a
+                      href="#"
+                      class="btn-category-filter"
+                      data-category="innovation"
+                      >Innovation</a
+                    >
+                  </div>
+                </div>
+                <div class="searched-news">
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news3.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">Healthcare Equity</p>
+                    <h5 class="single-news__title">
+                      Taking the Equity Discussion Online
+                    </h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news2.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">Innovation</p>
+                    <h5 class="single-news__title">
+                      Virtual Connection During COVID-19
+                    </h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news4.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">INNOVATION</p>
+                    <h5 class="single-news__title">
+                      Making a Trip to the ER Less Scary
+                    </h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news5.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">COMMUNITY</p>
+                    <h5 class="single-news__title">
+                      Food Trucks for the Front Line
+                    </h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news6.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">Healthcare Equity</p>
+                    <h5 class="single-news__title">
+                      COVID + Food Insecurity: Patient Pantries at ZSFG
+                    </h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="single-news">
+                    <div class="single-news__img">
+                      <img src="assets/images/dynamic/news3.jpg" alt="" />
+                    </div>
+                    <p class="single-news__category">INNOVATION</p>
+                    <h5 class="single-news__title">In Times of Crisis</h5>
+                    <a href="#" class="btn-link single-news__link">
+                      Read More
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <button class="btn-pagination prev">
+                    <svg
+                      width="51"
+                      height="15"
+                      viewBox="0 0 51 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M50 7.5L2 7.5"
+                        stroke="#695E4A"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.5 1L1 7.5L7.5 14"
+                        stroke="#695E4A"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="text">Previous</span>
+                  </button>
+                  <div class="page-navigator">
+                    <span class="current-page">1</span>&nbsp;/&nbsp;
+                    <span class="total-page">10</span>
+                  </div>
+                  <button class="btn-pagination next">
+                    <span class="text">Next</span>
+                    <svg
+                      width="51"
+                      height="15"
+                      viewBox="0 0 51 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7.5L49 7.5"
+                        stroke="#695E4A"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M43.5 14L50 7.5L43.5 1"
+                        stroke="#695E4A"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </main>
+          <!-- End Content -->
+
+          <!-- Begin Footer -->
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="footer-left">
+                <a href="/" class="logo-link">
+                  <img
+                    class="desktop"
+                    src="assets/images/dynamic/logo.png"
+                    alt=""
+                  />
+                  <img
+                    src="assets/images/dynamic/logo_mobile.png"
+                    alt=""
+                    class="mobile"
+                  />
+                </a>
+              </div>
+              <div class="footer-right">
+                <h5>Join us to ensure equitable healthcare for all.</h5>
+                <a href="#" class="btn btn-primary">Support Us</a>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="footer-left">
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li class="menu-item"><a href="news.html">Latest News</a></li>
+                  <li class="menu-item">
+                    <a href="initiatives.html">Initiatives</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="support.html">Support Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="hearts.html">Hearts in SF</a>
+                  </li>
+                  <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-right">
+                <div class="footer-right__content">
+                  <div class="label">
+                    <p>Stay connected</p>
+                  </div>
+                  <div class="content">
+                    <div class="subscribe-form">
+                      <p class="title">
+                        Subscribe for occasional updates about how you can
+                        support public health in San Francisco.
+                      </p>
+                      <div class="form-fields">
+                        <div class="form-field">
+                          <input
+                            type="text"
+                            class="form-input"
+                            id="name"
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div class="form-field">
+                          <input
+                            type="email"
+                            class="form-input"
+                            id="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="submit"
+                        class="btn btn-secondary"
+                        value="subscribe"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-right__content">
+                  <div class="label">
+                    <p>Follow Us</p>
+                  </div>
+                  <div class="content">
+                    <ul class="social-items">
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Facebook.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Instagram.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img src="assets/images/dynamic/Twitter.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Linkedin.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img src="assets/images/dynamic/Youtube.svg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid footer-bar">
+              <div class="footer-left">
+                <div class="partners">
+                  <a href="#" class="partner-link">
+                    <img src="assets/images/dynamic/partner1.png" alt="" />
+                  </a>
+                  <a href="#" class="partner-link">
+                    <img src="assets/images/dynamic/partner2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="footer-right">
+                <div class="copyright">
+                  <p>
+                    &copy; Copyright 2021 San Francisco General Hospital
+                    Foundation - All Rights Reserved
+                    <span class="seperator">|</span>
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- End Footer -->
+        </scroll>
+      </div>
+    </div>
+    <!-- Begin Scripts -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/barba.umd.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/smooth-scrollbar.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

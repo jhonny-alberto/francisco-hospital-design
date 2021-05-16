@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <title>Single Initiative</title>
+    <!-- Begin Style  sheets -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- End Stylesheets -->
+  </head>
+  <body class="single-initiative">
+    <div class="loader"></div>
+
+    <!-- Begin Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- End Cursor -->
+    <div data-barba="wrapper">
+      <!-- Begin Header -->
+      <header class="header">
+        <nav class="container-fluid">
+          <a href="/" class="logo-link">
+            <img class="desktop" src="assets/images/dynamic/logo.png" alt="" />
+            <img
+              class="mobile"
+              src="assets/images/dynamic/logo_mobile.png"
+              alt=""
+            />
+          </a>
+          <button class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-menu">
+            <div class="nav-menu__inner">
+              <button class="hamburger-close-btn">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M1 1.38477L19.3848 19.7695" stroke="#695E4A" />
+                  <path d="M1 19.3848L19.3848 0.99999" stroke="#695E4A" />
+                </svg>
+              </button>
+              <ul class="menu-items">
+                <li class="menu-item">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Latest News</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Initiatives</a>
+                </li>
+                <li class="menu-item has-children">
+                  <a>Support Us</a>
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      <a href="#">CAPITAL CAMPAIGN</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">HEARTS IN SAN FRANCISCO</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">ZSFG COVID-19 FUND</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="hearts.html">Hearts in sf</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="donate.html" class="btn btn-primary donate-link">Donate</a>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <div data-barba="container" data-barba-namespace="home">
+        <scroll>
+          <!-- Begin Content -->
+          <main>
+            <section class="hero-video video-module" id="hero-video">
+              <img src="assets/images/dynamic/single-initiative.jpg" alt="" />
+              <div class="video-controls">
+                <button class="btn-mute btn-sound">
+                  <img src="assets/images/icon-mute.svg" alt="" />
+                </button>
+                <button class="btn-unmute btn-sound">
+                  <img src="assets/images/icon-sound.svg" alt="" />
+                </button>
+              </div>
+            </section>
+            <section class="text-cta-module">
+              <div class="container">
+                <h4>
+                  Help us support our city’s public hospital on the frontlines
+                  of COVID-19.
+                </h4>
+                <div class="content">
+                  <hr />
+                  <div class="cta-text__wrapper">
+                    <a href="#" class="btn btn-primary btn-cta">Donate</a>
+                    <p class="cta-text">
+                      ZSFG continues to be the front lines of a constantly
+                      evolving public health crisis - from testing to treatment
+                      to vaccination. With a dedicated team and trusted
+                      emergency protocols in place, the hospital is caring for
+                      all San Franciscans. In response to the growing needs at
+                      ZSFG in March 2020, the Foundation launched the ZSFG
+                      COVID-19 Fund. This fund was designed to support hospital
+                      administration with whatever they need today, tomorrow,
+                      and in the future to care for our city.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="slider-section" id="our-values">
+              <div class="container-fluid">
+                <h3 class="section-title">
+                  ZSFG on the frontlines of COVID-19
+                </h3>
+                <div class="slider-wrapper">
+                  <div class="slider-control">
+                    <button class="btn-slider prev">
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M50 7.5L2 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.5 1L1 7.5L7.5 14"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <div class="slider-navigator">
+                      <span class="current-num">1</span>&nbsp;/&nbsp;
+                      <span class="total-num">3</span>
+                    </div>
+                    <button class="btn-slider next">
+                      <svg
+                        width="51"
+                        height="15"
+                        viewBox="0 0 51 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 7.5L49 7.5"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M43.5 14L50 7.5L43.5 1"
+                          stroke="#695E4A"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="our-values slick-carousel" id="values-slider">
+                    <div class="slick-slide__item">
+                      <div class="our-value">
+                        <div class="our-value__image">
+                          <img
+                            src="assets/images/dynamic/single-initiative1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h5 class="our-value__title">
+                          Backing up the front lines
+                        </h5>
+                        <p class="our-value__desc">
+                          The ZSFG COVID-19 Fund has supported projects such as
+                          medical supply purchases; increased testing
+                          capabilities; building/space reconfiguration; support
+                          and care for hospital staff and their families; and
+                          support for patients.<br />
+                          With an initial investment of $250,000, the Fund has
+                          grown to nearly $5 million. As the COVID-19 crisis
+                          continues to evolve in the Bay Area, ZSFG needs your
+                          support.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="slick-slide__item">
+                      <div class="our-value">
+                        <div class="our-value__image">
+                          <img
+                            src="assets/images/dynamic/single-initiative2.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h5 class="our-value__title">
+                          Acute care and trauma center
+                        </h5>
+                        <p class="our-value__desc">
+                          In 2016 ZSFG opened its doors to our new acute care
+                          and trauma center and is now equipped with
+                          state-of-the-art facilities. With many more negative
+                          pressure treatment ICU rooms, a much larger emergency
+                          department, and single-occupancy inpatient and
+                          emergency department rooms, ZSFG is able to care for
+                          San Franciscans in its new facility better than ever
+                          before.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="slick-slide__item">
+                      <div class="our-value">
+                        <div class="our-value__image">
+                          <img
+                            src="assets/images/dynamic/single-initiative3.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <h5 class="our-value__title">Integrated Systems</h5>
+                        <p class="our-value__desc">
+                          Equipped with a connected electronic medical records
+                          system, ZSFG has the technology to work in unison to
+                          keep patients and our community safe. The hospital has
+                          put emergency protocols in place including patient
+                          surge plans, isolated treatment areas and specialized
+                          training across departments.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="news">
+              <div class="container-fluid">
+                <h3>ZSFG COVID-19 News</h3>
+                <div class="news-wrapper">
+                  <div class="news-module">
+                    <p class="news-category">
+                      <span class="text">INNOVATION</span>
+                      <span class="line"></span>
+                    </p>
+                    <div class="news-content">
+                      <div class="news-content__left">
+                        <a href="#" class="news-title">
+                          <h5>IN TIMES OF CRISIS</h5>
+                          <svg
+                            width="51"
+                            height="15"
+                            viewBox="0 0 51 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 7.5L49 7.5"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M43.5 14L50 7.5L43.5 1"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="news-content__right">
+                        <div
+                          class="news-image"
+                          style="
+                            background-image: url('assets/images/dynamic/news7.jpg');
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-module">
+                    <p class="news-category">
+                      <span class="text">HEALTHCARE EQUITY</span>
+                      <span class="line"></span>
+                    </p>
+                    <div class="news-content">
+                      <div class="news-content__left">
+                        <a href="#" class="news-title">
+                          <h5>
+                            COVID + Food Insecurity: Patient Pantries at ZSFG
+                          </h5>
+                          <svg
+                            width="51"
+                            height="15"
+                            viewBox="0 0 51 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 7.5L49 7.5"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M43.5 14L50 7.5L43.5 1"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="news-content__right">
+                        <div
+                          class="news-image"
+                          style="
+                            background-image: url('assets/images/dynamic/news6.jpg');
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news-module">
+                    <p class="news-category">
+                      <span class="text">COMMUNITY</span>
+                      <span class="line"></span>
+                    </p>
+                    <div class="news-content">
+                      <div class="news-content__left">
+                        <a href="#" class="news-title">
+                          <h5>Food Trucks for the Front Line</h5>
+                          <svg
+                            width="51"
+                            height="15"
+                            viewBox="0 0 51 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 7.5L49 7.5"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M43.5 14L50 7.5L43.5 1"
+                              stroke="#695E4A"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="news-content__right">
+                        <div
+                          class="news-image"
+                          style="
+                            background-image: url('assets/images/dynamic/news5.jpg');
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+          <!-- End Content -->
+
+          <!-- Begin Footer -->
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="footer-left">
+                <a href="/" class="logo-link">
+                  <img
+                    class="desktop"
+                    src="assets/images/dynamic/logo.png"
+                    alt=""
+                  />
+                  <img
+                    src="assets/images/dynamic/logo_mobile.png"
+                    alt=""
+                    class="mobile"
+                  />
+                </a>
+              </div>
+              <div class="footer-right">
+                <h5>Join us to ensure equitable healthcare for all.</h5>
+                <a href="#" class="btn btn-primary">Support Us</a>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="footer-left">
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li class="menu-item"><a href="news.html">Latest News</a></li>
+                  <li class="menu-item">
+                    <a href="initiatives.html">Initiatives</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="support.html">Support Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="hearts.html">Hearts in SF</a>
+                  </li>
+                  <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-right">
+                <div class="footer-right__content">
+                  <div class="label">
+                    <p>Stay connected</p>
+                  </div>
+                  <div class="content">
+                    <div class="subscribe-form">
+                      <p class="title">
+                        Subscribe for occasional updates about how you can
+                        support public health in San Francisco.
+                      </p>
+                      <div class="form-fields">
+                        <div class="form-field">
+                          <input
+                            type="text"
+                            class="form-input"
+                            id="name"
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div class="form-field">
+                          <input
+                            type="email"
+                            class="form-input"
+                            id="email"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <input
+                        type="submit"
+                        class="btn btn-secondary"
+                        value="subscribe"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-right__content">
+                  <div class="label">
+                    <p>Follow Us</p>
+                  </div>
+                  <div class="content">
+                    <ul class="social-items">
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Facebook.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Instagram.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img src="assets/images/dynamic/Twitter.svg" alt="" />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img
+                            src="assets/images/dynamic/Linkedin.svg"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="#" class="social-link">
+                          <img src="assets/images/dynamic/Youtube.svg" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid footer-bar">
+              <div class="footer-left">
+                <div class="partners">
+                  <a href="#" class="partner-link">
+                    <img src="assets/images/dynamic/partner1.png" alt="" />
+                  </a>
+                  <a href="#" class="partner-link">
+                    <img src="assets/images/dynamic/partner2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="footer-right">
+                <div class="copyright">
+                  <p>
+                    &copy; Copyright 2021 San Francisco General Hospital
+                    Foundation - All Rights Reserved
+                    <span class="seperator">|</span>
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- End Footer -->
+        </scroll>
+      </div>
+    </div>
+    <!-- Begin Scripts -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/barba.umd.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/smooth-scrollbar.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

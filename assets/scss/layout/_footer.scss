@@ -1,0 +1,226 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+// Footer styles
+.footer {
+  position: relative;
+  padding: 50px 0 0;
+  @include mq("tablet") {
+    padding: 80px 0 0;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: $secondary;
+    transform: translateX(-50%);
+    @include mq("desktop") {
+      width: calc(100% - 60px);
+    }
+    @include mq("desktop-ultra") {
+      width: calc(100% - 120px);
+    }
+  }
+  .container-fluid {
+    @include mq("tablet") {
+      display: flex;
+      margin-bottom: 70px;
+      align-items: flex-start;
+    }
+  }
+  &-left {
+    @include mq("tablet") {
+      padding-right: 20px;
+      width: 300px;
+      flex-shrink: 0;
+    }
+    @include mq("desktop") {
+      width: 40%;
+    }
+  }
+  &-right {
+    margin-top: 20px;
+    @include mq("tablet") {
+      margin-top: 0;
+      padding-left: 20px;
+      width: 100%;
+    }
+    @include mq("desktop") {
+      width: 60%;
+    }
+    h5 {
+      margin-top: 55px;
+      margin-bottom: 25px;
+      @include mq("tablet") {
+        margin-top: 0;
+        margin-bottom: 52px;
+      }
+    }
+    &__content {
+      @include mq("tablet-wide") {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 50px;
+      }
+      @include mq("desktop") {
+        grid-template-columns: 200px 1fr;
+        gap: 80px;
+      }
+      @include mq("desktop-ultra") {
+        gap: 130px;
+      }
+      .label {
+        flex-shrink: 0;
+        @include captionText();
+      }
+      .content {
+        margin-top: 10px;
+        overflow: hidden;
+        @include mq("tablet-wide") {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .logo-link {
+    cursor: pointer;
+    img {
+      &.desktop {
+        display: none;
+      }
+      @include mq("desktop") {
+        max-width: 250px;
+        &.mobile {
+          display: none;
+        }
+        &.desktop {
+          display: block;
+        }
+      }
+      @include mq("desktop-ultra") {
+        max-width: 350px;
+      }
+    }
+  }
+  .menu-items {
+    @include mq("tablet", "max") {
+      margin-top: 50px;
+      column-count: 2;
+    }
+    .menu-item {
+      a {
+        @include buttonText();
+        display: block;
+        margin-bottom: 30px;
+        color: $secondary;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .subscribe-form {
+    margin-bottom: 50px;
+    @include mq("tablet-wide") {
+      margin-bottom: 70px;
+    }
+    .title {
+      @include bodyText(6);
+      margin-bottom: 10px;
+      @include mq("tablet-wide") {
+        margin-bottom: 40px;
+      }
+    }
+    .form-fields {
+      margin-bottom: 30px;
+      @include mq("phone") {
+        display: flex;
+      }
+      @include mq("tablet-wide") {
+        margin-bottom: 45px;
+      }
+      .form-field {
+        width: 100%;
+        @include mq("phone") {
+          max-width: calc(calc(100% - 30px) / 2);
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        input {
+          @include bodyText(6);
+          padding: 6px 0;
+          max-width: 100%;
+          width: 100%;
+          border: none;
+          border-radius: 0;
+          border-bottom: 1px solid $secondary;
+          background: transparent;
+          &::placeholder {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  .social-items {
+    display: flex;
+    .social-item {
+      margin: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      .social-link {
+        cursor: pointer;
+      }
+    }
+  }
+  .footer-bar {
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $primary;
+    align-items: center;
+    @include mq("tablet") {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+  .partners {
+    display: flex;
+    align-items: center;
+    .partner-link {
+      margin-right: 20px;
+      @include mq("tablet") {
+        margin-right: 50px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    p,
+    a {
+      @include captionText(2);
+      color: $white;
+    }
+    p {
+      @include mq("tablet") {
+        .seperator {
+          display: none;
+        }
+      }
+    }
+  }
+}

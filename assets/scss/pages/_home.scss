@@ -1,0 +1,31 @@
+.page-template-home {
+  #hearts {
+    .text-cta-module {
+      @include mq("tablet", "max") {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  #news {
+    margin: 76px 0;
+    @include mq("tablet") {
+      margin: 100px 0;
+    }
+    @include mq("desktop") {
+      margin: 200px 0;
+    }
+    @include mq("desktop-ultra") {
+      margin: 240px 0;
+    }
+    h3 {
+      margin-bottom: 23px;
+      @include mq("tablet") {
+        margin-bottom: 50px;
+      }
+      @include mq("desktop") {
+        margin-bottom: 92px;
+      }
+    }
+  }
+}

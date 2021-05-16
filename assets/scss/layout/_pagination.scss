@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  .btn-pagination {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    @include buttonText();
+    &:hover {
+      color: $primary;
+      svg path {
+        stroke: $primary;
+      }
+    }
+    svg {
+      width: 50px;
+      transition: transform 0.3s ease-in-out;
+      will-change: transform;
+      path {
+        transition: stroke 0.3s ease-in-out;
+        will-change: stroke;
+      }
+    }
+    .text {
+      padding: 0 22px;
+    }
+    &.prev:hover svg {
+      transform: translateX(-10px);
+    }
+    &.next:hover svg {
+      transform: translateX(10px);
+    }
+  }
+  .page-navigator {
+    @include captionText(large);
+  }
+}
